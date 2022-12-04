@@ -8,7 +8,8 @@ import config
 
 openai.api_key = config.openai_key
 
-client = tweepy.Client(config.consumer_key,
+client = tweepy.Client(config.bearer_token,
+                       config.consumer_key,
                        config.consumer_secret,
                        config.access_token,
                        config.access_token_secret)
